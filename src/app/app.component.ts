@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'repasoAngular';
+  public title:string = 'repasoAngular';
+  public counter:number=20;
+
+  levelCounter(valor:number):void{
+    this.counter += valor;
+  }
+  resetCounter():void{
+    this.counter=20;
+  }
+
 }
